@@ -19,4 +19,12 @@ public class Library {
             this.books.add(book);
         }
     }
+
+    public Book loanBook(){
+        if (this.books.size() > 0){
+            return this.books.remove(0);
+        } else {
+            return null;
+        }
+    }
 }

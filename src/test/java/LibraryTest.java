@@ -36,6 +36,13 @@ public class LibraryTest {
         assertEquals(5, library.numberOfBooks());
     }
 
-
+    @Test
+    public void canLoanBook(){
+        library.addBook(book);
+        library.addBook(book);
+        library.addBook(book);
+        library.loanBook();
+        assertEquals(2, library.numberOfBooks());
+    }
 
 }
