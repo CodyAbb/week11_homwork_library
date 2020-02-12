@@ -45,4 +45,11 @@ public class LibraryTest {
         assertEquals(2, library.numberOfBooks());
     }
 
+    @Test
+    public void canAddGenreCount(){
+        library.addToGenreCount(book);
+        library.addToGenreCount(book);
+        assertEquals(2, library.getGenreCount("Postmodernism"));
+    }
+
 }
